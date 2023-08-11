@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://beusnllx8dudk"]
+
+[ext_resource type="PackedScene" uid="uid://btfxhd5m4gqkh" path="res://Characters/player_cat.tscn" id="1_utydu"]
+
+[node name="GameLevel" type="Node2D"]
+y_sort_enabled = true
+position = Vector2(-1, 0)
+
+[node name="PlayerCat" parent="." instance=ExtResource("1_utydu")]
+position = Vector2(179, 157)
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
